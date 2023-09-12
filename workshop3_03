@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+
+    <script>
+        
+      function count(n){
+        document.getElementById("result").innerText = n.length;
+      }
+
+
+    </script>
+
+</head>
+
+<body>
+  글자수 세기<br>
+  <textarea rows="10" cols="10" onkeyup="count(this.value)"></textarea><br>
+  입력문자수:<span id="result"></span>
+</body>
+
+</html>
