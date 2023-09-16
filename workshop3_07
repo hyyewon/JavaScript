@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <script>
+     
+      
+       function sum(n){
+        var sum=0;
+       for(var i=1;i<=n.innerText;i++){
+        sum+=i;
+       }
+        document.getElementById("result").innerText=sum;
+       }
+      
+      
+    </script>
+
+</head>
+
+<body>
+  <button onclick="sum(this)">5</button>
+  <button onclick="sum(this)">10</button>
+  <button onclick="sum(this)">15</button><br>
+  총합:<span id="result"></span>
+  </body>
+
+</html>
