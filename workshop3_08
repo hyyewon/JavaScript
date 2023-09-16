@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <script>
+     
+      
+       function pwcheck(n){
+        var ps=document.getElementById("passwd").value;
+        var mesg="비밀번호 불일치";
+        
+        if(ps==n){
+          mesg="비밀번호 일치";
+        }
+        document.getElementById("result").innerText=mesg;
+       }
+      
+      
+    </script>
+
+</head>
+
+<body>
+  비밀번호 확인 구현<br>
+  비밀번호<input type="text" name="passwd" id="passwd"><br>
+  비밀번호 재확인<input type="text" name="passwd1" id="passwd1" onkeyup="pwcheck(this.value)">
+  <span id='result'></span>
+ </body>
+
+</html>
