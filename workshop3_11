@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <script>
+     
+      
+       function up(){
+        var mesg = document.querySelector("#result");
+        mesg.style="font-size:32px";
+       }
+
+       function down(){
+        var mesg = document.querySelector("#result");
+        mesg.style="font-size:16px";
+       }
+      
+      
+    </script>
+
+</head>
+
+<body>
+  <button onClick="up()">+</button><button onClick="down()">-</button>
+  <div id="result">
+    안녕하세요.
+  </div>
+</body>
+
+</html>
