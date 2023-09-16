@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+    <script>
+     
+      
+       function chk(n){
+        var lang = document.querySelectorAll(".lang");
+        for(var i=0;i<lang.length;i++){
+          lang[i].checked=n.checked;
+        }
+       }
+      
+      
+    </script>
+
+</head>
+
+<body>
+  전체선택
+  <input type="checkbox" name="all" onclick="chk(this)"><br>
+  <input type="checkbox" name="java" class="lang">java<br>
+  <input type="checkbox" name="sql" class="lang">sql<br>
+  <input type="checkbox" name="angular" class="lang">angular<br>
+  </body>
+
+</html>
